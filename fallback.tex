@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{amsmath}
+\newcommand{\fallback}{\ensuremath{\text{\textit{⁊}}}}
+
+\begin{document}
+
+\section*{Fallback Operator Demonstration}
+
+Let us define a fallback function using the operator \fallback:
+
+\[
+f(x) = x \fallback 0
+\]
+
+This means: if \( x \) is defined, use it. Otherwise, fall back to 0.
+
+\bigskip
+
+Another example with multiple layers:
+
+\[
+x = a \fallback b \fallback c
+\]
+
+This short-circuits from left to right.
+
+\end{document}
